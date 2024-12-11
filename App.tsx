@@ -6,14 +6,16 @@
  */
 
 import React from 'react';
-import {StatusBar} from 'react-native';
 
+import HomeScreen from './src/pages_or_screens/HomeScreen/HomeScreen';
 
 
 function App(): React.JSX.Element {
   return (
-      <StatusBar />
-      )
+    <>
+    <HomeScreen/>
+    </>
+      );
     }
 
 export default App;
