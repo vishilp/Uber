@@ -3,12 +3,14 @@ import {View, Text} from "react-native";
 
 import HomeMap from "../../components/HomeMap/HomeMap";
 import CovidMsg from "../../components/CovidMsg/CovidMsg";
+import HomeSearch from "../../components/HomeSearch/HomeSearch";
 
 const HomeScreen = (props) => {
     return(
         <View>
             <HomeMap/>
             <CovidMsg/>
+            <HomeSearch/>
         </View>
     )
 }
