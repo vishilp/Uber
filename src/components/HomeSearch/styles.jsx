@@ -22,7 +22,26 @@ const styles= StyleSheet.create(
             backgroundColor:"#ffffff",
             padding: 8,
             borderRadius: 50
+        },
+
+        row:{
+            flexDirection: 'row',
+            padding:15,
+            alignItems: 'center',
+            borderBottomWidth: 1,
+            borderColor: "#dfdddd"
+        },
+        iconContainer:{
+            backgroundColor: "#918d8d",
+            padding: 8,
+            borderRadius:30
+        },
+        destinationText:{
+            marginLeft: 10,
+            fontWeight:'500',
+            fontSize: 16
         }
+
     }
 )
 

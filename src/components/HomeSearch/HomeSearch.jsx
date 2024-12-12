@@ -8,6 +8,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 const HomeSearch = (props) => {
   return (
     <View>
+        {/* Search bar */}
       <View style= {styles.inputBox}>
         <Text style= {styles.inputText}>Where To?</Text>
         <View style = {styles.timeContainer}>
@@ -16,6 +17,14 @@ const HomeSearch = (props) => {
           <MaterialIcons name={'keyboard-arrow-down'} size= {20} />
         </View>
       </View>
+
+        {/* Prev dest */}
+        <View style={styles.row}>
+            <View style={styles.iconContainer}> {/* the circle wrapping the icons */}
+                <AntDesign name={"clockcircle"} size= {24} color = "#ffffff"/>
+            </View>
+            <Text style={styles.destinationText}>Dave's Hot Chicken</Text>
+        </View>
 
     </View>
   );
