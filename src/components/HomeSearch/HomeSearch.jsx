@@ -11,9 +11,9 @@ const HomeSearch = (props) => {
       <View style= {styles.inputBox}>
         <Text style= {styles.inputText}>Where To?</Text>
         <View style = {styles.timeContainer}>
-          <AntDesign name={"clockcircle"} size= {16} color = "#3f3f3f"/>
-          <Text>Now</Text>
-          <MaterialIcons name={'keyboard-arrow-down'} size= {20}/>
+          <AntDesign name={"clockcircle"} marginTop ={2} size= {16} color = "#3f3f3f"/>
+          <Text marginLeft = {5}>Now</Text>
+          <MaterialIcons name={'keyboard-arrow-down'} size= {20} />
         </View>
       </View>
 
