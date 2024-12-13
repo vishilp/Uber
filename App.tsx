@@ -8,12 +8,13 @@
 import React from 'react';
 
 import HomeScreen from './src/pages_or_screens/HomeScreen/HomeScreen';
+import SearchScreen from './src/pages_or_screens/SearchScreen/SearchScreen';
 
 
 function App(): React.JSX.Element {
   return (
     <>
-    <HomeScreen/>
+    <SearchScreen/>
     </>
       );
     }

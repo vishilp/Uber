@@ -19,9 +19,10 @@ const HomeSearch = (props) => {
         </View>
       </View>
 
-        {/* Prev dest */}
-        <View style={styles.row}>
-            <View style={styles.iconContainer}> {/* the circle wrapping the icons */}
+      {/* Prev dest */}
+      <View style={styles.row}>
+        {/* the circle wrapping the icons */}
+            <View style={styles.iconContainer}> 
                 <AntDesign name={"clockcircle"} size= {24} color = "#ffffff"/>
             </View>
             <Text style={styles.destinationText}>Dave's Hot Chicken</Text>
@@ -29,7 +30,7 @@ const HomeSearch = (props) => {
 
         {/* Home Icon */}
         <View style={styles.row}>
-            <View style={[styles.iconContainer, {backgroundColor: "#3685df"}]}> {/* the circle wrapping the icons */}
+            <View style={[styles.iconContainer, {backgroundColor: "#3685df"}]}>
                 <Entypo name={"home"} size= {24} color = "#ffffff"/>
             </View>
             <Text style={styles.destinationText}>Home</Text>
