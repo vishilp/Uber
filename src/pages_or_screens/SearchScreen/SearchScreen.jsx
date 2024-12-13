@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import {View, Text, TextInput, SafeAreaView} from "react-native";
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 
+import { GOOGLE_API_KEY } from '@env'
+
 
 import styles from "./styles";
 
@@ -26,7 +28,7 @@ const SearchScreen = (props) => {
                         console.log(data, details);
                     }}
                     query={{
-                        key: 'Your API key',
+                        key: GOOGLE_API_KEY,
                         language: 'en',
                     }}
                     />

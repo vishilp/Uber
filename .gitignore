@@ -1,3 +1,7 @@
+# .env file containing sensitive keys
+.env
+
+
 # OSX
 #
 .DS_Store
