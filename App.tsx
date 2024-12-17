@@ -13,12 +13,13 @@ import 'react-native-get-random-values';
 
 import HomeScreen from './src/pages_or_screens/HomeScreen/HomeScreen';
 import SearchScreen from './src/pages_or_screens/SearchScreen/SearchScreen';
+import OrderScreen from './src/pages_or_screens/OrderScreen/OrderScreen';
 
 
 function App(): React.JSX.Element {
   return (
     <>
-    <SearchScreen/>
+    <OrderScreen/>
     </>
       );
     }
