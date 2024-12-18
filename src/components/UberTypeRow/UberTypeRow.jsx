@@ -11,8 +11,8 @@ const UberTypeRow = () => {
             source={require("../../assets/Car_Images/UberX.jpeg")}/>
 
             <View style= {styles.middleContainer}>
-                <Text style= {styles.vehicleType}>UberX
-                    <Ionicons name = {'person'} size = {12} />
+                <Text style= {styles.vehicleType}>UberX {' '}
+                    <Ionicons name = {'person'} size = {14} />
                     3
                 </Text>
                 <Text style={styles.time}>8:03PM dropoff</Text>
@@ -20,7 +20,7 @@ const UberTypeRow = () => {
             </View>
 
             <View style= {styles.rightContainer}>
-                <Ionicons name = {'pricetag'} size = {18} color = {'green'}/>
+                <Ionicons name = {'pricetag'} size = {18} color = {'#39961c'}/>
                 <Text style= {styles.price}>est. $27</Text>
             </View>
         </View>
