@@ -5,9 +5,14 @@ import UberTypes from "../../components/UberTypes/UberTypes";
 
 const OrderScreen = (props) => {
     return(
-        <View>
-            <HomeMap/>
-            <UberTypes/>
+        <View style={{flex:1}}>
+            <View style={{flex:1}}>
+                <HomeMap/>
+            </View>
+    
+            <View style={{height: 400}}>
+                <UberTypes/>
+            </View>
         </View>
     )
 }
