@@ -7,8 +7,10 @@ import HomeSearch from "../../components/HomeSearch/HomeSearch";
 
 const HomeScreen = (props) => {
     return(
-        <View>
-            <HomeMap/>
+        <View style= {{flex:1}}>
+            <View style = {{flex:1}}>
+                <HomeMap/>
+            </View>
             <CovidMsg/>
             <HomeSearch/>
         </View>
