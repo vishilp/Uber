@@ -3,12 +3,12 @@ import {View, Text} from "react-native";
 import styles from "./styles";
 import UberTypeRow from "../UberTypeRow/UberTypeRow";
 
+import typesdata from '../../assets/data/types'
+
 const UberTypes = (props) => {
     return(
         <View>
-            <UberTypeRow/>
-            <UberTypeRow/>
-            <UberTypeRow/>
+            {typesdata.map(type => <UberTypeRow ubertype={type}/>)}
         </View>
     )
 }
