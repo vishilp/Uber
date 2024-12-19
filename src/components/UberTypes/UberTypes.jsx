@@ -7,6 +7,8 @@ const UberTypes = (props) => {
     return(
         <View>
             <UberTypeRow/>
+            <UberTypeRow/>
+            <UberTypeRow/>
         </View>
     )
 }
