@@ -5,6 +5,7 @@ import UberTypeRow from "../UberTypeRow/UberTypeRow";
 
 import typesdata from '../../assets/data/types'
 
+
 const UberTypes = (props) => {
 
     const confirm = () => {
