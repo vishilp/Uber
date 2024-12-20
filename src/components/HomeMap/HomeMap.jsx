@@ -1,10 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import {View, Text, Image, FlatList} from "react-native";
 import  MapView, {Marker, MyCustomMarkerView} from 'react-native-maps';
 
 import cars from "../../assets/data/cars";
 
 const HomeMap = (props) => {
+    const [region, setRegion] = useState({
+            latitude: 28.450627,
+            longitude: -16.263045,
+            latitudeDelta: 0.0222,
+            longitudeDelta: 0.0221,
+    });
 
     const getImage= (type) => {
         if (type =='UberX')
