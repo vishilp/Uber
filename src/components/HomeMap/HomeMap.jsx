@@ -27,12 +27,10 @@ const HomeMap = (props) => {
             {cars.map((car)=>(
                 <Marker key={car.id}
                 coordinate={{ latitude: car.latitude, longitude: car.longitude }}
-                tracksViewChanges={true}>
-                    
-                        <Image style= {{width: 30, height: 30, resizeMode: 'contain'}}
-                        source = {getImage(car.type)}/>
-    
-                </Marker>
+                tracksViewChanges={true}
+                image= {getImage(car.type)}></Marker>
+                
+                
             ))}
             
             
