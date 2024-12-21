@@ -4,7 +4,7 @@ import  MapView, {Marker, MyCustomMarkerView} from 'react-native-maps';
 
 import cars from "../../assets/data/cars";
 
-const HomeMap = (props) => {
+const RouteMap = (props) => {
     const [region, setRegion] = useState({
             latitude: 28.450627,
             longitude: -16.263045,
@@ -26,22 +26,9 @@ const HomeMap = (props) => {
             initialRegion={region}
             region={region}>
             
-
-            {cars.map((car)=>(
-                <Marker key={car.id}
-                coordinate={{ latitude: car.latitude, longitude: car.longitude }}
-                tracksViewChanges={true}
-                image= {getImage(car.type)}></Marker>
-                
-                
-            ))}
-            
-            
-
-
             </MapView>
             
     )
 }
 
-export default HomeMap
+export default RouteMap
