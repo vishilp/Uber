@@ -13,6 +13,20 @@ const styles= StyleSheet.create(
             marginVertical: 5,
             fontWeight: '600',
             fontSize: 16,
+        },
+
+        row:{
+           flexDirection: 'row',
+           alignItems: 'center',
+        },
+        iconContainer:{
+            backgroundColor: '#9e9d9d',
+            padding: 5,
+            borderRadius: 20,
+            marginRight: 10
+        },
+        locationText:{
+            fontWeight: 'bold'
         }
     }
 )

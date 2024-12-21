@@ -30,11 +30,12 @@ const SearchScreen = (props) => {
                         // 'details' is provided when fetchDetails = true
                         setOriginPlace(value= {data, details})
                     }}
+                    enablePoweredByContainer = {false}
                     styles={{textInput: styles.textInput, 
                         container:{
                             position: 'absolute',
                             top: 20,
-                            left: 40, 
+                            left: 10, 
                             right: 10
                         },
                         listView:{
@@ -55,11 +56,12 @@ const SearchScreen = (props) => {
                         // 'details' is provided when fetchDetails = true
                         setDestinationPlace(value= {data, details})
                     }}
+                    enablePoweredByContainer = {false}
                     styles={{textInput: styles.textInput, 
                         container:{
                             position: 'absolute',
                             top: 75,
-                            left: 40, 
+                            left: 10, 
                             right: 10
                         }}}
                     query={{
