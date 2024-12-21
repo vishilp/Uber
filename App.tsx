@@ -19,7 +19,7 @@ import OrderScreen from './src/pages_or_screens/OrderScreen/OrderScreen';
 function App(): React.JSX.Element {
   return (
     <>
-    <HomeScreen/>
+    <SearchScreen/>
     </>
       );
     }

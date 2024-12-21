@@ -6,6 +6,7 @@ const styles= StyleSheet.create(
             padding:10,
             height: '100%',
         },
+
         textInput:{
             padding:15,
             backgroundColor: "#eee",

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {View, Text, TextInput, SafeAreaView} from "react-native";
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import PlaceRow from "./PlaceRow";
 
 import { GOOGLE_API_KEY } from '@env'
 
@@ -29,11 +30,22 @@ const SearchScreen = (props) => {
                         // 'details' is provided when fetchDetails = true
                         setOriginPlace(value= {data, details})
                     }}
-                    styles={{textInput: styles.textInput}}
+                    styles={{textInput: styles.textInput, 
+                        container:{
+                            position: 'absolute',
+                            top: 20,
+                            left: 40, 
+                            right: 10
+                        },
+                        listView:{
+                            position: 'absolute',
+                            top: 105
+                        }}}
                     query={{
                         key: GOOGLE_API_KEY,
                         language: 'en',
                     }}
+                    renderRow={(data)=> <PlaceRow data = {data}/>}
                     />
 
                 <GooglePlacesAutocomplete
@@ -43,7 +55,13 @@ const SearchScreen = (props) => {
                         // 'details' is provided when fetchDetails = true
                         setDestinationPlace(value= {data, details})
                     }}
-                    styles={{textInput: styles.textInput}}
+                    styles={{textInput: styles.textInput, 
+                        container:{
+                            position: 'absolute',
+                            top: 75,
+                            left: 40, 
+                            right: 10
+                        }}}
                     query={{
                         key: GOOGLE_API_KEY,
                         language: 'en',
