@@ -9,6 +9,7 @@ import React, { useEffect } from 'react';
 import { PermissionsAndroid } from 'react-native';
 import 'react-native-get-random-values';
 /* for the google places api*/
+import Geolocation from 'react-native-geolocation-service';
 
 
 

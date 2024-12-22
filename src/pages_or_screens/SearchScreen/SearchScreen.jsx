@@ -9,7 +9,7 @@ import { GOOGLE_API_KEY } from '@env'
 import styles from "./styles";
 
 const SearchScreen = (props) => {
-
+    navigator.geolocation = require('react-native-geolocation-service');
     const [originPlace, setOriginPlace] = useState(null)
     const [destinationPlace, setDestinationPlace] = useState(null)
 
@@ -18,6 +18,7 @@ const SearchScreen = (props) => {
             console.warn('Redirect to results')
         }
     }, [originPlace, destinationPlace])
+
 
     return(
         <SafeAreaView>
@@ -47,6 +48,8 @@ const SearchScreen = (props) => {
                         language: 'en',
                     }}
                     renderRow={(data)=> <PlaceRow data = {data}/>}
+                    currentLocation = {true}
+                    currentLocationLabel="Current Location"
                     />
 
                 <GooglePlacesAutocomplete
