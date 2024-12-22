@@ -13,6 +13,7 @@ const styles= StyleSheet.create(
             marginVertical: 5,
             fontWeight: '600',
             fontSize: 16,
+            marginLeft: 25
         },
 
         row:{
@@ -27,6 +28,32 @@ const styles= StyleSheet.create(
         },
         locationText:{
             fontWeight: 'bold'
+        },
+
+        circle:{
+            borderRadius: 10,
+            width: 6,
+            height: 6,
+            backgroundColor: 'black',
+            position: 'absolute',
+            top: 40,
+            left: 15
+        },
+        line:{
+            width: 2,
+            height: 50,
+            backgroundColor: '#c2bfbf',
+            position: 'absolute',
+            top: 48,
+            left: 17
+        },
+        square:{
+            width: 6,
+            height: 6,
+            backgroundColor: 'black',
+            position: 'absolute',
+            top: 100,
+            left: 15
         }
     }
 )

@@ -68,8 +68,12 @@ const SearchScreen = (props) => {
                         key: GOOGLE_API_KEY,
                         language: 'en',
                     }}
+                    renderRow={(data)=> <PlaceRow data = {data}/>}
                     />
-
+                {/* top left black design*/}
+                <View style= {styles.circle}/>
+                <View style= {styles.line}/>
+                <View style= {styles.square}/>
             </View>
         </SafeAreaView>
     )
