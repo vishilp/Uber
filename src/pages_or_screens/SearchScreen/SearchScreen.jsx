@@ -4,9 +4,16 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 import PlaceRow from "./PlaceRow";
 
 import { GOOGLE_API_KEY } from '@env'
-
-
 import styles from "./styles";
+
+const homePlace = {
+    description: 'Home',
+    geometry: { location: { lat: 48.8152937, lng: 2.4597668 } },
+  };
+  const workPlace = {
+    description: 'Work',
+    geometry: { location: { lat: 48.8496818, lng: 2.2940881 } },
+  };
 
 const SearchScreen = (props) => {
     navigator.geolocation = require('react-native-geolocation-service')
@@ -52,6 +59,7 @@ const SearchScreen = (props) => {
                     renderDescription={(data)=> data.description || data.vicinity}
                     currentLocation = {true}
                     currentLocationLabel="Current Location"
+                    predefinedPlaces={[homePlace, workPlace]}
                     />
 
                 <GooglePlacesAutocomplete
@@ -74,6 +82,7 @@ const SearchScreen = (props) => {
                         language: 'en',
                     }}
                     renderRow={(data)=> <PlaceRow data = {data}/>}
+                    predefinedPlaces={[homePlace, workPlace]}
                     />
                 {/* top left black design*/}
                 <View style= {styles.circle}/>
