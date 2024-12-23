@@ -5,19 +5,15 @@
  * @format
  */
 
+import 'react-native-gesture-handler';
+
 import React, { useEffect, useState} from 'react';
 import { PermissionsAndroid } from 'react-native';
 import 'react-native-get-random-values';
 /* for the google places api*/
 import Geolocation from 'react-native-geolocation-service';
 
-
-
-import HomeScreen from './src/pages_or_screens/HomeScreen/HomeScreen';
-import SearchScreen from './src/pages_or_screens/SearchScreen/SearchScreen';
-import OrderScreen from './src/pages_or_screens/OrderScreen/OrderScreen';
-
-
+import Router from './src/navigation/root';
 
 function App(): React.JSX.Element {
 
@@ -55,8 +51,7 @@ function App(): React.JSX.Element {
 
   return (
     <>
-
-    <HomeScreen/>
+      <Router/>
     </>
       );
     }
