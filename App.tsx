@@ -5,7 +5,7 @@
  * @format
  */
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState} from 'react';
 import { PermissionsAndroid } from 'react-native';
 import 'react-native-get-random-values';
 /* for the google places api*/
@@ -18,9 +18,11 @@ import SearchScreen from './src/pages_or_screens/SearchScreen/SearchScreen';
 import OrderScreen from './src/pages_or_screens/OrderScreen/OrderScreen';
 
 
+
 function App(): React.JSX.Element {
 
   {/*req permission for user location using useEffect (runs once automatically)*/}
+
 
   const requestLocationPermission = async () => {
     try {
@@ -44,6 +46,7 @@ function App(): React.JSX.Element {
     } catch (err) {
       console.warn(err);
     }
+
   };
 
   useEffect(() => {

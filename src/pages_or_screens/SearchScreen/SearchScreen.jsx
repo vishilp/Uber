@@ -9,7 +9,8 @@ import { GOOGLE_API_KEY } from '@env'
 import styles from "./styles";
 
 const SearchScreen = (props) => {
-    navigator.geolocation = require('react-native-geolocation-service');
+    navigator.geolocation = require('react-native-geolocation-service')
+    
     const [originPlace, setOriginPlace] = useState(null)
     const [destinationPlace, setDestinationPlace] = useState(null)
 
