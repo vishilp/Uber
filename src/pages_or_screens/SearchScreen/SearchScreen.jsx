@@ -49,6 +49,7 @@ const SearchScreen = (props) => {
                         language: 'en',
                     }}
                     renderRow={(data)=> <PlaceRow data = {data}/>}
+                    renderDescription={(data)=> data.description || data.vicinity}
                     currentLocation = {true}
                     currentLocationLabel="Current Location"
                     />

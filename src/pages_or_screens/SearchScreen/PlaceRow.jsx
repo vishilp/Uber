@@ -12,7 +12,7 @@ const PlaceRow = ({data}) => {
                 <Entypo name='location-pin' size = {20} color = {'white'}/>
             </View>
             <Text style={styles.locationText}>
-                {data.description}
+                {data.description || data.name}
             </Text>
         </View>
     )
