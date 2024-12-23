@@ -21,7 +21,8 @@ const RouteMap = (props) => {
             <MapView
             style = {{height: '100%', width: '100%'}}
             initialRegion={region}
-            region={region}>
+            region={region}
+            showsUserLocation = {true}>
                 
                 <MapViewDirections
                 origin={origin}

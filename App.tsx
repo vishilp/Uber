@@ -56,7 +56,7 @@ function App(): React.JSX.Element {
   return (
     <>
 
-    <SearchScreen/>
+    <HomeScreen/>
     </>
       );
     }

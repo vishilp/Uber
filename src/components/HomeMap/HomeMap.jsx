@@ -24,8 +24,8 @@ const HomeMap = (props) => {
             <MapView
             style = {{height: '100%', width: '100%'}}
             initialRegion={region}
-            region={region}>
-            
+            region={region}
+            showsUserLocation = {true}>
 
             {cars.map((car)=>(
                 <Marker key={car.id}
