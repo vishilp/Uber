@@ -5,9 +5,9 @@ import HomeScreen from "../pages_or_screens/HomeScreen/HomeScreen";
 import SearchScreen from "../pages_or_screens/SearchScreen/SearchScreen";
 import OrderScreen from "../pages_or_screens/OrderScreen/OrderScreen";
 
-import { createStackNavigator } from "@react-navigation/stack";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const RootNavigator = () => {
     return(
