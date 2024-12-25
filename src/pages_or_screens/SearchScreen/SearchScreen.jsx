@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {View, Text, TextInput, SafeAreaView} from "react-native";
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import PlaceRow from "./PlaceRow";
+import { useNavigation } from "@react-navigation/native";
 
 import { GOOGLE_API_KEY } from '@env'
 import styles from "./styles";
@@ -21,9 +22,14 @@ const SearchScreen = (props) => {
     const [originPlace, setOriginPlace] = useState(null)
     const [destinationPlace, setDestinationPlace] = useState(null)
 
+    const navigation = useNavigation();
+
+    const navigate=()=>{
+        navigation.navigate('Order', {originPlace, destinationPlace})
+    }
     useEffect( () => {
-        if (originPlace && destinationPlace){
-            console.warn('Redirect to results')
+        if (destinationPlace && originPlace){
+            navigate();
         }
     }, [originPlace, destinationPlace])
 
@@ -37,7 +43,7 @@ const SearchScreen = (props) => {
                     fetchDetails = {true}
                     onPress={(data, details = null) => {
                         // 'details' is provided when fetchDetails = true
-                        setOriginPlace(value= {data, details})
+                        setOriginPlace({data})
                     }}
                     enablePoweredByContainer = {false}
                     styles={{textInput: styles.textInput, 
@@ -61,13 +67,13 @@ const SearchScreen = (props) => {
                     currentLocationLabel="Current Location"
                     predefinedPlaces={[homePlace, workPlace]}
                     />
-
+                    
                 <GooglePlacesAutocomplete
                     placeholder='Where to?'
                     fetchDetails = {true}
                     onPress={(data, details = null) => {
                         // 'details' is provided when fetchDetails = true
-                        setDestinationPlace(value= {data, details})
+                        setDestinationPlace({data})
                     }}
                     enablePoweredByContainer = {false}
                     styles={{textInput: styles.textInput, 
