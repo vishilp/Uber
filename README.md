@@ -1,3 +1,15 @@
+<h1 align="center">React-Native Uber Application</h1>
+<p>The goal of this project was to learn android application development through the React-Native framework. It features three screens: a Home Screen connected with a Google Maps API, a Search Screen with the Google Places Autocomplete API, and a Order Results screen with a Route mapping API. The project helped me fine tune component design, CSS-based styling, and working with APIs. </p>
+
+<div>
+  <img src="https://i.imgur.com/PZuBMAk.png"  />
+   <img src="https://i.imgur.com/NViHkNV.png"  />
+   <img src="https://i.imgur.com/jJJg4J3.png"  />
+</div>
+
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
