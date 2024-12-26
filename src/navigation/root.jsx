@@ -1,16 +1,19 @@
 import React from "react";
 import {View, Text} from 'react-native'
 import { NavigationContainer } from "@react-navigation/native";
-
-
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeNavigator from "./home";
+import {createDrawerNavigator} from "@react-navigation/drawer"
 
+const Drawer = createDrawerNavigator();
+
+const MyDrawer = createDrawerNavigator();
 
 const RootNavigator = () => {
     return(
         <NavigationContainer>
-            <HomeNavigator/>
+            <MyDrawer.Navigator>
+                <MyDrawer.Screen name="Home" component={HomeNavigator}/>
+            </MyDrawer.Navigator>
         </NavigationContainer>
     )
 }

@@ -1,3 +1,6 @@
+
+import 'react-native-reanimated';
+
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -12,6 +15,7 @@ import { PermissionsAndroid } from 'react-native';
 import 'react-native-get-random-values';
 /* for the google places api*/
 import Geolocation from 'react-native-geolocation-service';
+
 
 import Router from './src/navigation/root';
 
